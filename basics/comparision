@@ -1,0 +1,21 @@
+// console.log(2 > 1);
+// console.log(2 >= 1);
+// console.log(2 < 1);
+// console.log(2 == 1);
+// console.log(2 != 1);
+ 
+
+// console.log("2" > 1);  //true => it will convert string "2" into 2
+// console.log("02" > 1); //true
+
+console.log(null > 0);   // (>)operator treats null as 0  ==> return false
+console.log(null == 0);  // return false
+console.log(null >= 0);  // return true
+
+console.log(undefined == 0);  // return false
+console.log(undefined > 0);   // return false
+console.log(undefined < 0);   // return false
+
+// === 
+
+console.log("2" === 2);   // strict check ==> it checks datatype also while comparing
