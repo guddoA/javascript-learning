@@ -1,5 +1,5 @@
 // Types of Data => 1. Primitive   2. Non-Primitive
-
+// Primitive datatypes get stored in Stack whereas Non-primitive datatypes get stored in Heap
 /*
  JavaScript is a dynamically typed language. This means that the type of a variable 
  is determined at runtime, based on the value assigned to it, rather than being explicitly
