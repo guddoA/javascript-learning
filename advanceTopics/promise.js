@@ -78,12 +78,26 @@ async function consumePromiseFive(){
 consumePromiseFive()
 
 
-async function getAllUsers(){
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = response.json();
-    console.log("Data: ",data)
-}
+// async function getAllUsers(){
+//     try{
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json();
+//         console.log("Data: ",data)
+//     } catch(error){
+//         console.log("ERROR is occurring, something went wrong with API")
+//     }
+// }
 
-getAllUsers()
+// getAllUsers()
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log("Data Then/Catch: ", data)
+})
+.catch((error) => console.log(error))
 
 
